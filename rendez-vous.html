@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Franckolib - Prendre rendez-vous</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>♡</span> Franckolib
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="medecins.html">Médecins</a>
+            <a href="#">Services</a>
+            <a href="#">Connexion</a>
+        </nav>
+
+    </header>
+
+
+    <!-- RENDEZ-VOUS -->
+
+    <section class="appointment-page">
+
+        <div class="appointment-container">
+
+            <!-- IMAGE -->
+
+            <div class="appointment-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1638202993928-7d113c8a4b1a?auto=format&fit=crop&w=900&q=85"
+                    alt="Professionnel de santé"
+                >
+
+                <div class="appointment-image-card">
+
+                    <span>✓</span>
+
+                    <div>
+                        <strong>Prise de rendez-vous</strong>
+                        <small>Simple, rapide et sécurisé</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORMULAIRE -->
+
+            <div class="appointment-card">
+
+                <span class="badge">
+                    ✦ Votre rendez-vous
+                </span>
+
+                <h1>
+                    Prenez rendez-vous
+                </h1>
+
+                <p class="appointment-intro">
+                    Choisissez la date et l'heure qui vous conviennent.
+                </p>
+
+
+                <div class="doctor-selected">
+
+                    <div class="doctor-selected-icon">
+                        🩺
+                    </div>
+
+                    <div>
+                        <span>Professionnel sélectionné</span>
+                        <strong id="medecin"></strong>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="date">
+                        📅 Choisir une date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="heure">
+                        🕐 Choisir une heure
+                    </label>
+
+                    <select id="heure">
+
+                        <option value="">
+                            Choisir une heure
+                        </option>
+
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="actions-rdv">
+
+                    <button id="confirmer">
+                        Confirmer le rendez-vous
+                    </button>
+
+                    <button id="annuler">
+                        Annuler
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script-rendez-vous.js"></script>
+
+</body>
+
+</html>

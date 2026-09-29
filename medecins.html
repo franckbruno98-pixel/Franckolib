@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Franckolib - Trouver un médecin</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>♡</span> Franckolib
+        </div>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="medecins.html">Médecins</a>
+            <a href="#">Services</a>
+            <a href="#">Connexion</a>
+        </nav>
+
+    </header>
+
+
+    <!-- EN-TÊTE -->
+
+    <section class="doctors-hero">
+
+        <div class="doctors-hero-content">
+
+            <span class="badge">
+                ✦ Annuaire Franckolib
+            </span>
+
+            <h1>
+                Trouvez le professionnel<br>
+                <span>qui vous accompagne.</span>
+            </h1>
+
+            <p>
+                Consultez notre annuaire de professionnels de santé
+                et prenez rendez-vous simplement.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- RECHERCHE -->
+
+    <section class="doctor-directory">
+
+        <div class="directory-search">
+
+            <div class="directory-field">
+
+                <label>Spécialité</label>
+
+                <select id="filtreSpecialite">
+
+                    <option value="">Toutes les spécialités</option>
+                    <option value="medecin-generaliste">
+                        Médecin généraliste
+                    </option>
+                    <option value="dentiste">
+                        Dentiste
+                    </option>
+                    <option value="dermatologue">
+                        Dermatologue
+                    </option>
+                    <option value="cardiologue">
+                        Cardiologue
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="directory-field">
+
+                <label>Ville</label>
+
+                <input
+                    type="text"
+                    id="filtreVille"
+                    placeholder="Paris, Lyon..."
+                >
+
+            </div>
+
+            <button id="rechercherMedecins">
+                Rechercher
+            </button>
+
+        </div>
+
+
+        <!-- RESULTATS -->
+
+        <div class="directory-top">
+
+            <div>
+                <span class="directory-label">
+                    PROFESSIONNELS DE SANTÉ
+                </span>
+
+                <h2>
+                    Médecins disponibles
+                </h2>
+            </div>
+
+            <span id="nombreMedecins" class="doctor-count"></span>
+
+        </div>
+
+
+        <div id="resultats" class="doctor-list"></div>
+
+    </section>
+
+
+    <script src="script-medecins.js"></script>
+
+</body>
+
+</html>
